@@ -1,4 +1,3 @@
-import { useState } from "react";
 import backgroundImage from "./assets/background5.jpg";
 import "devicon/devicon.min.css";
 

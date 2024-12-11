@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Tabs, Tab, Box } from "@mui/material";
+import { Tabs } from "@mui/material";
 import ProjectDetails from "./ProjectDetails";
 import { StyledContainer, StyledTab } from "./styled";
 import gameImage from "./imgs/game.png";
@@ -15,7 +15,7 @@ interface Project {
 const ProjectTabs: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<number>(0);
 
-  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleTabChange = (_event: React.SyntheticEvent, newValue: number) => {
     setSelectedTab(newValue);
   };
 
