@@ -110,7 +110,7 @@ function App() {
           <Typography variant="h6" sx={{ mt: 2 }}>
             I am a student at John Abbott in my last year of Computer Science,
             passionate about all things programming and software development. I
-            have proffesional experience in full stack web development using
+            have professional experience in full stack web development using
             React.js and Next.js and look forward to learning new things in the
             field.
           </Typography>

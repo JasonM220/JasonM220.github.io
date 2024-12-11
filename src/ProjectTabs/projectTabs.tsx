@@ -10,6 +10,7 @@ interface Project {
   title: string;
   description: string;
   image?: string;
+  imageLink?: string;
 }
 
 const ProjectTabs: React.FC = () => {
@@ -26,6 +27,7 @@ const ProjectTabs: React.FC = () => {
       description:
         "A dynamic and engaging 2D platformer game built using Godot and GDScript. Players navigate through challenging levels filled with enemies and obstacles, utilizing unique attack and defense mechanics, such as deflecting bullets. The game includes a checkpoint system to save progress and a visually appealing pixel-art style.",
       image: gameImage,
+      imageLink: "https://github.com/JasonM220/game-project",
     },
     {
       title: "Tranquility",
@@ -36,6 +38,7 @@ const ProjectTabs: React.FC = () => {
         "Firebase integration powers real-time data storage and retrieval, enabling users to access their meditation history" +
         "across devices. It also inclues an AI meditation assistant for any other help needed.",
       image: tranquility,
+      imageLink: "https://github.com/JasonM220/AppDev2-Project",
     },
     {
       title: "Website Vulnerability Scanner",
@@ -43,6 +46,7 @@ const ProjectTabs: React.FC = () => {
         "Developed a Website Vulnerability Scanner using Python, Selenium, and Tkinter to identify potential security issues in web applications. The tool features a graphical user interface and performs the following checks:" +
         "insecure cookies detection, open directory listing, outdated software identification, open ports scanning.",
       image: network,
+      imageLink: "https://github.com/JasonM220/vulnerability-scanner",
     },
   ];
 
@@ -73,6 +77,7 @@ const ProjectTabs: React.FC = () => {
         title={projects[selectedTab].title}
         description={projects[selectedTab].description}
         image={projects[selectedTab].image}
+        imageLink={projects[selectedTab].imageLink}
       />
     </StyledContainer>
   );

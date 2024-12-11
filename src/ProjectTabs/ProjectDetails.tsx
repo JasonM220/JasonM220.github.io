@@ -5,12 +5,14 @@ interface ProjectDetailsProps {
   title: string;
   description: string;
   image?: string;
+  imageLink?: string; 
 }
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({
   title,
   description,
   image,
+  imageLink,
 }) => {
   return (
     <Box
@@ -31,19 +33,21 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({
         </Typography>
       </Box>
       {image ? (
-        <Box
-          component="img"
-          src={image}
-          alt={title}
-          sx={{
-            mt: 2,
-            width: "auto",
-            height: "100%",
-            maxHeight: "300px",
-            borderRadius: 2,
-            boxShadow: 3,
-          }}
-        ></Box>
+        <a href={imageLink} target="_blank" rel="noopener noreferrer">
+          <Box
+            component="img"
+            src={image}
+            alt={title}
+            sx={{
+              mt: 2,
+              width: "auto",
+              height: "100%",
+              maxHeight: "300px",
+              borderRadius: 2,
+              boxShadow: 3,
+            }}
+          />
+        </a>
       ) : null}
     </Box>
   );
